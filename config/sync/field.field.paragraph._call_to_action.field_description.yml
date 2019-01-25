@@ -1,0 +1,21 @@
+uuid: 1f36ecee-2252-4306-9409-03d2f314f0ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type._call_to_action
+  module:
+    - text
+id: paragraph._call_to_action.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: _call_to_action
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

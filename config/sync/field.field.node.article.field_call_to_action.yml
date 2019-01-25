@@ -1,0 +1,31 @@
+uuid: 93332780-f192-40c1-9326-f623eb4f6413
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_call_to_action
+    - node.type.article
+    - paragraphs.paragraphs_type._call_to_action
+  module:
+    - entity_reference_revisions
+id: node.article.field_call_to_action
+field_name: field_call_to_action
+entity_type: node
+bundle: article
+label: 'Call To Action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      _call_to_action: _call_to_action
+    target_bundles_drag_drop:
+      _call_to_action:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
